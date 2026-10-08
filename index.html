@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CampusConnect - Innovate. Connect. Lead.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" /></noscript>
+<link rel="stylesheet" href="style.css" />
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="glow" id="glow"></div>
+
+<!-- NOTICE TICKER -->
+<div class="ticker">
+  <span class="ticker__label">NOTICES</span>
+  <div class="ticker__window"><div class="ticker__track" id="tickerTrack"></div></div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand"><span class="dot"></span>CampusConnect</a>
+    <nav class="nav__links">
+      <a href="#why">About</a>
+      <a href="#services">Marketplace</a>
+      <a href="#events">Events</a>
+      <a href="#clubs">Clubs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav__cta" href="https://miet.ac.in/online-registration.php" target="_blank" rel="noopener">Apply Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__slides" id="heroSlides"></div>
+  <div class="blob blob--1"></div><div class="blob blob--2"></div><div class="blob blob--3"></div>
+  <div class="hero__overlay"></div>
+  <canvas class="hero__canvas" id="heroCanvas"></canvas>
+
+  <div class="hero__content">
+    <p class="hero__tag">&#10024; Shaping Futures Since 1997 &middot; MIET Meerut</p>
+    <h1 class="hero__title">Innovate.<br /><span class="rot" id="rotWord">Connect.</span><br />Lead the Future.</h1>
+    <p class="hero__sub">One directory for student businesses, campus events and every club - the way you would ask a senior, not scroll a WhatsApp group.</p>
+
+    <form class="hero__search" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Find tuition, events, clubs..." autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="hero__cta">
+      <a class="btn btn--gold" href="#services">Explore Marketplace</a>
+      <a class="btn btn--ghost" href="#clubs">Meet the Clubs</a>
+    </div>
+  </div>
+
+  <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- QUICK ACCESS -->
+<section class="quick">
+  <a class="quick__item" href="#services"><span>&#128717;&#65039;</span>Marketplace</a>
+  <a class="quick__item" href="#events"><span>&#127881;</span>Events</a>
+  <a class="quick__item" href="#clubs"><span>&#128101;</span>Clubs</a>
+  <a class="quick__item" href="https://miet.ac.in/notice.php" target="_blank" rel="noopener"><span>&#128226;</span>Official Notices</a>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats"><div class="stats__inner" id="statsInner"></div></section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="section__head reveal"><span class="eyebrow">About CampusConnect</span><h2>Why CampusConnect?</h2>
+    <p>MIET is full of talent and activity - but it is scattered across notice boards, Instagram stories and group chats. We bring it together.</p></div>
+  <div class="grid grid--why" id="whyGrid"></div>
+</section>
+
+<!-- MARKETPLACE -->
+<section class="section section--tint" id="services">
+  <div class="section__head reveal"><span class="eyebrow">Student Marketplace</span><h2>Micro-businesses by students, for students</h2></div>
+  <div class="filters reveal" id="serviceFilters"></div>
+  <div class="grid" id="serviceGrid"></div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+  <div class="section__head reveal"><span class="eyebrow">Campus Events</span><h2>Where the campus comes alive</h2></div>
+  <div class="grid grid--events" id="eventGrid"></div>
+  <p class="credit">Event photos: official MIET website (miet.ac.in)</p>
+  <h3 class="sub reveal">Upcoming Events</h3>
+  <div class="timeline" id="upcomingList"></div>
+</section>
+
+<!-- CLUBS -->
+<section class="section section--tint" id="clubs">
+  <div class="section__head reveal"><span class="eyebrow">Clubs &amp; Societies</span><h2>Find your people</h2>
+    <p>Official student bodies at MIET Meerut, with conveners and faculty in-charge.</p></div>
+  <div class="marquee reveal"><div class="marquee__track" id="clubMarquee"></div></div>
+  <div class="grid grid--clubs" id="clubGrid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="cta reveal">
+    <h2>Be part of the MIET family</h2>
+    <p>This is a student project. For admissions and official information, visit the official MIET website.</p>
+    <div class="hero__cta">
+      <a class="btn btn--gold" href="https://miet.ac.in/online-registration.php" target="_blank" rel="noopener">Admissions Open 2026</a>
+      <a class="btn btn--ghost" href="https://miet.ac.in/virtual-tour.php" target="_blank" rel="noopener">360&deg; Campus Tour</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div><strong>CampusConnect</strong><p>Discover. Connect. Grow - Within Your Campus.</p></div>
+    <div><strong>Campus</strong><p>N.H. 58, Delhi-Roorkee Highway, Baghpat Road Bypass Crossing, Meerut - 250005, Uttar Pradesh</p></div>
+    <div><strong>Official links</strong>
+      <p><a href="https://miet.ac.in/" target="_blank" rel="noopener">miet.ac.in</a> &middot;
+      <a href="https://miet.ac.in/clubs-societies.php" target="_blank" rel="noopener">Clubs</a> &middot;
+      <a href="https://miet.ac.in/placements.php" target="_blank" rel="noopener">Placements</a></p></div>
+  </div>
+  <p class="footer__note">An independent student project - not the official MIET website.</p>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
